@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- ════════════════════════════════════════════════════════════
+       SEO META TAGS
+       These tell search engines (Google, Bing) what your page is about.
+       ✏️  Update title, description, and url before going live.
+       ════════════════════════════════════════════════════════════ -->
+  <title>LN Core Supply | Industrial & Commercial Solutions</title>
+  <meta name="description" content="LN Core Supply delivers premium industrial and commercial products with next-generation logistics, reliability, and customer service. Fast fulfillment, competitive pricing, and real support." />
+  <meta name="keywords" content="industrial supply, commercial products, bulk supply, B2B supply, LN Core Supply, fast shipping, equipment supply" />
+  <meta name="author" content="LN Core Supply" />
+
+  <!-- ════════════════════════════════════════════════════════════
+       OPEN GRAPH TAGS
+       These control how your link looks when shared on
+       Facebook, LinkedIn, iMessage, Slack, etc.
+       ✏️  Add your og:image (1200x630px recommended) before launch.
+       ════════════════════════════════════════════════════════════ -->
+  <meta property="og:title" content="LN Core Supply | Industrial & Commercial Solutions" />
+  <meta property="og:description" content="Premium products. Modern logistics. Reliable support. LN Core Supply delivers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.lncoresupply.com" />
+  <!-- <meta property="og:image" content="https://www.lncoresupply.com/og-image.jpg" /> -->
+
+  <!-- ════════════════════════════════════════════════════════════
+       TWITTER CARD TAGS
+       Controls how your link looks when shared on Twitter/X.
+       ════════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LN Core Supply | Industrial & Commercial Solutions" />
+  <meta name="twitter:description" content="Premium products. Modern logistics. Reliable support." />
+
+  <!-- ════════════════════════════════════════════════════════════
+       CANONICAL URL
+       Tells Google which URL is the "real" one to avoid
+       duplicate content penalties.
+       ✏️  Update this to your actual domain.
+       ════════════════════════════════════════════════════════════ -->
+  <link rel="canonical" href="https://www.lncoresupply.com" />
+
+  <!-- ════════════════════════════════════════════════════════════
+       GOOGLE FONTS
+       We load two typefaces:
+       - Syne      → Bold display font used for headings & logo
+       - DM Sans   → Clean body font used for paragraphs & UI
+       preconnect speeds up the font load by opening the
+       connection to Google's servers early.
+       ════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- ════════════════════════════════════════════════════════════
+       STRUCTURED DATA (JSON-LD)
+       This is invisible to visitors but Google reads it to
+       understand your business — helps with rich search results.
+       ✏️  Update telephone and email with your real info.
+       ════════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LN Core Supply",
+    "url": "https://www.lncoresupply.com",
+    "description": "LN Core Supply delivers premium commercial and industrial products with modern logistics and reliable support.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-555-0100",
+      "contactType": "sales",
+      "email": "hello@lncoresupply.com"
+    }
+  }
+  </script>
+
+  <style>
+
+    /* ════════════════════════════════════════════════════════════
+       RESET
+       Removes browser default margins, padding, and box model
+       quirks so every element behaves consistently.
+       ════════════════════════════════════════════════════════════ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ════════════════════════════════════════════════════════════
+       CSS CUSTOM PROPERTIES (Variables)
+       Think of these like paint swatches. Change a value here
+       and it updates everywhere on the page automatically.
+
+       COLOR PALETTE:
+         --white      → Page background (pure white)
+         --off-white  → Subtle section backgrounds / cards
+         --black      → Primary text color
+         --marine     → Main brand blue (buttons, accents)
+         --marine-light → Hover state / lighter blue
+         --marine-dark  → Dark navy for icon backgrounds
+         --gray       → Secondary / muted text
+         --border     → Subtle dividing lines between sections
+
+       FONTS:
+         --font-display → Syne, used for headings and logo
+         --font-body    → DM Sans, used for all body text
+       ════════════════════════════════════════════════════════════ */
+    :root {
+      --white:        #ffffff;
+      --off-white:    #f4f6f9;
+      --black:        #0d0d0d;
+      --marine:       #0d4f8b;
+      --marine-light: #1a6dbf;
+      --marine-dark:  #082d52;
+      --gray:         #666;
+      --gray-light:   #999;
+      --border:       rgba(0, 0, 0, 0.08);
+      --font-display: 'Syne', sans-serif;
+      --font-body:    'DM Sans', sans-serif;
+    }
+
+    /* ════════════════════════════════════════════════════════════
+       BASE / BODY
+       scroll-behavior: smooth → makes anchor links (#about, etc.)
+       scroll smoothly instead of jumping.
+       overflow-x: hidden → prevents horizontal scrollbar from
+       appearing due to animated elements near edges.
+       ════════════════════════════════════════════════════════════ */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--black);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── NAVIGATION BAR ──
+       position: fixed   → stays at top of screen while scrolling
+       backdrop-filter   → frosted-glass blur behind the nav
+       z-index: 100      → sits on top of all other elements
+       transition        → smooth appearance changes on scroll
+       ════════════════════════════════════════════════════════════ */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 4rem;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px); /* Safari support */
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.3s ease;
+      /* iOS safe-area: prevents content from hiding under notch/Dynamic Island */
+      padding-left: max(4rem, env(safe-area-inset-left));
+      padding-right: max(4rem, env(safe-area-inset-right));
+    }
+
+    /* ── Logo ──
+       The logo uses bracket characters [LN CORE SUPPLY]
+       The brackets are marine blue; the text is black. */
+    .logo {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .logo-bracket { color: var(--marine); }   /* Blue brackets */
+    .logo-text    { color: var(--black); }    /* Black text */
+
+    /* ── Nav Links (About, Products, Why Us) ── */
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none; /* removes the bullet points from <ul> */
+    }
+    .nav-links a {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s; /* smooth color change on hover */
+    }
+    .nav-links a:hover { color: var(--black); }
+
+    /* ── "Get a Quote" button in the nav ──
+       Uses !important to override the base .nav-links a styles */
+    .nav-cta {
+      background: var(--marine) !important;
+      color: white !important;
+      padding: 0.55rem 1.4rem !important;
+      border-radius: 2px;
+      font-weight: 600 !important;
+      letter-spacing: 0.04em !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover {
+      background: var(--marine-light) !important;
+      color: white !important;
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── HERO SECTION ──
+       The first thing visitors see — full viewport height.
+       Uses flexbox to vertically center the content.
+       position: relative → allows absolutely positioned children
+       (the grid background and glow orbs) to be placed inside it.
+       ════════════════════════════════════════════════════════════ */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 8rem 4rem 4rem; /* top padding accounts for fixed nav */
+      background: var(--white);
+    }
+
+    /* ── Decorative grid background lines ──
+       Two overlapping linear-gradients create the grid pattern.
+       mask-image fades the grid out toward the edges so it
+       doesn't look hard-edged. */
+    .hero-grid-bg {
+      position: absolute;
+      inset: 0; /* shorthand for top/right/bottom/left: 0 */
+      background-image:
+        linear-gradient(rgba(13, 79, 139, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(13, 79, 139, 0.07) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 100%);
+      pointer-events: none; /* prevents grid from blocking clicks */
+    }
+
+    /* ── Soft blue glow orbs ──
+       These are invisible circles with a radial gradient that
+       create a subtle colored light effect in the background. */
+    .hero-glow {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(13, 79, 139, 0.1) 0%, transparent 70%);
+      top: -150px;
+      right: -200px;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-glow-2 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(26, 109, 191, 0.07) 0%, transparent 70%);
+      bottom: 80px;
+      left: -100px;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* ── Main hero content (text + buttons) ──
+       animation: fadeUp → slides up and fades in on page load.
+       Defined in the @keyframes section below. */
+    .hero-content {
+      position: relative;  /* sits above the decorative bg layers */
+      max-width: 860px;
+      animation: fadeUp 0.9s ease both;
+    }
+
+    /* ── Small label above the headline ──
+       The ::before pseudo-element draws the horizontal line
+       that appears to the left of the text. */
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--marine);
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.9s 0.1s ease both;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 2px;
+      background: var(--marine);
+    }
+
+    /* ── Main Heading (H1) ──
+       clamp() makes the font size fluid/responsive:
+       never smaller than 3rem, ideal 7vw, never larger than 5.5rem.
+       -webkit-text-stroke is used for the "outline only" text effect. */
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 800;
+      line-height: 1.15;           /* was 1.0 — caused descenders (g,j,y) to clip */
+      letter-spacing: -0.03em;
+      color: var(--black);
+      margin-bottom: 1.8rem;
+      overflow: visible;           /* ensures nothing is clipped by the container */
+      padding-bottom: 0.08em;      /* tiny buffer so the very bottom of glyphs breathe */
+      animation: fadeUp 0.9s 0.2s ease both;
+    }
+    h1 .accent {
+      color: var(--marine); /* "Perform." is rendered in marine blue */
+    }
+    h1 .stroke {
+      /* "Built to Last." renders as outline text only — no fill */
+      -webkit-text-stroke: 2px rgba(13, 79, 139, 0.25);
+      color: transparent;
+    }
+
+    /* ── Hero paragraph (subtitle) ── */
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--gray);
+      max-width: 540px;
+      line-height: 1.8;
+      margin-bottom: 2.8rem;
+      animation: fadeUp 0.9s 0.3s ease both;
+    }
+
+    /* ── Hero CTA Buttons row ── */
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap; /* wraps to new line on mobile */
+      animation: fadeUp 0.9s 0.4s ease both;
+    }
+
+    /* ── KEY STATS (500+ Products, 48h, 99%) ──
+       Positioned absolutely in the bottom-right of the hero.
+       On mobile these drop to static positioning (see responsive section). */
+    .hero-stats {
+      position: absolute;
+      right: 4rem;
+      bottom: 4rem;
+      display: flex;
+      gap: 3rem;
+      animation: fadeUp 0.9s 0.5s ease both;
+    }
+    .stat { text-align: right; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--black);
+      line-height: 1;
+    }
+    .stat-num span { color: var(--marine); } /* the +, h, % characters */
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--gray-light);
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      margin-top: 0.3rem;
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── REUSABLE BUTTON STYLES ──
+       .btn-primary → solid marine blue button
+       .btn-outline  → transparent button with a border
+       ════════════════════════════════════════════════════════════ */
+    .btn-primary {
+      background: var(--marine);
+      color: white;
+      padding: 0.9rem 2.2rem;
+      border-radius: 2px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover {
+      background: var(--marine-light);
+      transform: translateY(-1px); /* subtle lift on hover */
+    }
+    /* The arrow icon inside the button slides right on hover */
+    .btn-primary svg { transition: transform 0.2s; }
+    .btn-primary:hover svg { transform: translateX(4px); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--black);
+      padding: 0.9rem 2.2rem;
+      border-radius: 2px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: 1.5px solid rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-outline:hover {
+      border-color: var(--marine);
+      color: var(--marine);
+      background: rgba(13, 79, 139, 0.04);
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── TICKER / MARQUEE BAR ──
+       The scrolling text strip between the hero and about sections.
+       overflow: hidden clips content outside the bar.
+       white-space: nowrap prevents text from line-breaking.
+       The .ticker-inner runs the CSS animation that moves it left.
+       The content is duplicated in HTML so the loop is seamless.
+       ════════════════════════════════════════════════════════════ */
+    .ticker-wrap {
+      background: var(--off-white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 0.8rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .ticker-inner {
+      display: inline-flex;
+      animation: ticker 28s linear infinite; /* scrolls continuously */
+    }
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray);
+      padding: 0 3rem;
+    }
+    /* The small blue dot between ticker items */
+    .ticker-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--marine);
+      flex-shrink: 0;
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── SECTION LABEL ──
+       The small uppercase blue tag above each section heading
+       (e.g. "Who We Are", "Our Catalog", etc.)
+       ════════════════════════════════════════════════════════════ */
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--marine);
+      margin-bottom: 0.8rem;
+    }
+
+    /* ── Section Heading (H2) shared across all sections ── */
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--black);
+      margin-bottom: 1.5rem;
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── ABOUT SECTION ──
+       Two-column layout: text on left, feature tiles on right.
+       display: grid with two equal columns handles the layout.
+       ════════════════════════════════════════════════════════════ */
+    #about {
+      padding: 7rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .about-text p {
+      color: var(--gray);
+      line-height: 1.85;
+      margin-bottom: 1.2rem;
+    }
+
+    /* ── Feature Pillars Grid ──
+       Four tiles in a 2x2 grid. The background + gap: 1px trick
+       creates the appearance of borders between tiles. */
+    .pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;               /* this is the "border" between tiles */
+      background: var(--border); /* the border color shows through the gap */
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .pillar {
+      background: var(--white);
+      padding: 1.8rem 1.5rem;
+      transition: background 0.25s;
+    }
+    .pillar:hover {
+      background: rgba(13, 79, 139, 0.04); /* subtle blue tint on hover */
+    }
+
+    /* ── Icon container inside each pillar ── */
+    .pillar-icon {
+      width: 38px;
+      height: 38px;
+      background: rgba(13, 79, 139, 0.08); /* light blue background */
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      color: var(--marine);
+    }
+    .pillar h4 {
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 0.35rem;
+    }
+    .pillar p {
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── PRODUCTS SECTION ──
+       Six product category cards in a 3-column grid.
+       The header row uses space-between to push the "View Catalog"
+       button to the right side.
+       ════════════════════════════════════════════════════════════ */
+    #products {
+      padding: 7rem 4rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--off-white); /* slightly different bg for contrast */
+    }
+
+    .products-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+
+    /* ── Product Grid ──
+       Same border trick as pillars: background color + 1px gap = lines. */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    /* ── Individual Product Card ──
+       ::after creates a hidden gradient overlay that slides up
+       from the bottom when the card is hovered. */
+    .product-card {
+      background: var(--white);
+      padding: 2.4rem 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .product-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 0;
+      background: linear-gradient(0deg, rgba(13, 79, 139, 0.06), transparent);
+      transition: height 0.4s ease;
+      pointer-events: none;
+    }
+    .product-card:hover { background: #fafcff; }
+    .product-card:hover::after { height: 100%; } /* gradient slides up */
+
+    /* ── Badges (New Arrival, Bestseller, On Sale) ── */
+    .product-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.65rem;
+      border-radius: 2px;
+      margin-bottom: 1.4rem;
+    }
+    .badge-new  { background: rgba(13, 79, 139, 0.1); color: var(--marine); }
+    .badge-best { background: rgba(0, 0, 0, 0.05);    color: var(--gray); }
+    .badge-sale { background: rgba(200, 50, 50, 0.08); color: #c03030; }
+
+    /* ── Large ghost number behind the card title (01, 02...) ──
+       Very light black — acts as a decorative background element. */
+    .product-num {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: rgba(0, 0, 0, 0.045);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.04em;
+    }
+    .product-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+    .product-card p {
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.65;
+      margin-bottom: 1.4rem;
+    }
+
+    /* ── "Shop Category →" link ──
+       gap increases on hover to animate the arrow moving away. */
+    .product-link {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--marine);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.2s;
+    }
+    .product-link:hover { gap: 0.9rem; }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── WHY US SECTION ──
+       Two-column layout: heading/intro on left, numbered list right.
+       grid-template-columns: 1fr 2fr = left col is half the width.
+       ════════════════════════════════════════════════════════════ */
+    #why {
+      padding: 7rem 4rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative blue gradient in the right background */
+    .why-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 50% 70% at 90% 50%, rgba(13, 79, 139, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 6rem;
+      align-items: start;
+      position: relative; /* sits above .why-bg */
+    }
+
+    /* ── Numbered list of differentiators ── */
+    .why-list { list-style: none; display: flex; flex-direction: column; }
+    .why-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+    .why-item:first-child { border-top: 1px solid var(--border); }
+
+    /* The "01", "02" etc. numbers */
+    .why-num {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--marine);
+      min-width: 24px;
+      padding-top: 0.2rem;
+    }
+    .why-item h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 0.3rem;
+    }
+    .why-item p { font-size: 0.83rem; color: var(--gray); line-height: 1.7; }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── TRUST / SOCIAL PROOF SECTION ──
+       Testimonial quote on the left, 4 trust badges on the right.
+       ════════════════════════════════════════════════════════════ */
+    #trust {
+      padding: 5rem 4rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--off-white);
+      display: flex;
+      align-items: center;
+      gap: 6rem;
+    }
+
+    .trust-quote { flex: 1; }
+
+    /* ── Blockquote testimonial ──
+       border-left creates the blue vertical bar to the left. */
+    blockquote {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+      font-weight: 600;
+      line-height: 1.45;
+      letter-spacing: -0.01em;
+      color: var(--black);
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--marine);
+    }
+    .quote-attr { font-size: 0.82rem; color: var(--gray-light); padding-left: 1.5rem; }
+    .quote-attr strong { color: var(--gray); font-weight: 600; }
+
+    /* ── 2x2 grid of trust badges ── */
+    .trust-badges {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      min-width: 320px;
+    }
+    .trust-badge {
+      background: var(--white);
+      padding: 1.5rem;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .trust-badge:hover { background: rgba(13, 79, 139, 0.03); }
+    .trust-badge-icon { font-size: 1.6rem; margin-bottom: 0.5rem; display: block; }
+    .trust-badge h5 {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 0.2rem;
+    }
+    .trust-badge p { font-size: 0.72rem; color: var(--gray); }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── CALL TO ACTION (CTA) SECTION ──
+       Centered layout with a headline, description, and two buttons.
+       The background gradient adds a soft blue glow in the center.
+       ════════════════════════════════════════════════════════════ */
+    #cta {
+      padding: 8rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    /* Soft centered blue glow behind the CTA text */
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(13, 79, 139, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    #cta h2 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      position: relative; /* sits above .cta-bg */
+      margin-bottom: 1rem;
+    }
+    #cta p {
+      color: var(--gray);
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      position: relative;
+      line-height: 1.8;
+    }
+    .cta-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── FOOTER ──
+       Three columns: logo, nav links, copyright notice.
+       flex with space-between spreads them across the full width.
+       ════════════════════════════════════════════════════════════ */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--off-white);
+    }
+
+    .footer-logo {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: -0.02em;
+      color: var(--black);
+    }
+
+    .footer-links { display: flex; gap: 2rem; list-style: none; }
+    .footer-links a {
+      font-size: 0.78rem;
+      color: var(--gray-light);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--marine); }
+
+    .footer-copy { font-size: 0.75rem; color: rgba(100, 100, 100, 0.5); }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── SCROLL REVEAL ANIMATION CLASS ──
+       Elements with class="reveal" start invisible and slightly
+       shifted downward. When JavaScript detects them entering the
+       viewport, it adds class="visible", triggering the transition.
+       ════════════════════════════════════════════════════════════ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── KEYFRAME ANIMATIONS ──
+
+       fadeUp: Used for hero section elements on page load.
+         - Starts transparent and 24px below final position.
+         - Each hero element has a different animation-delay
+           so they stagger (0s, 0.1s, 0.2s, etc.)
+
+       ticker: Used for the scrolling marquee bar.
+         - Moves the inner container from 0 to -50% (half its width)
+         - Since the content is duplicated, this creates a seamless loop.
+       ════════════════════════════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+
+    /* ════════════════════════════════════════════════════════════
+       ── RESPONSIVE / MOBILE STYLES ──
+       @media queries apply styles only at certain screen widths.
+       max-width: 900px → tablets and small laptops
+       max-width: 580px → phones
+       ════════════════════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      /* ── Nav: compact padding, respects iOS safe-area (notch / Dynamic Island).
+         env(safe-area-inset-*) is set by iOS Safari to avoid hardware cutouts.
+         max() ensures at least the minimum padding on non-notch devices. */
+      nav {
+        padding-top: 0.85rem;
+        padding-bottom: 0.85rem;
+        padding-left: max(1.2rem, env(safe-area-inset-left));
+        padding-right: max(1.2rem, env(safe-area-inset-right));
+        gap: 0.5rem;
+      }
+
+      /* Shrink the logo font slightly so it never wraps on small screens */
+      .logo { font-size: 1rem; gap: 0.3rem; }
+
+      /* Hide middle nav links on tablet, keep CTA button */
+      .nav-links { gap: 1rem; }
+
+      /* Hero: remove side padding, keep top padding for fixed nav */
+      #hero { padding: 6rem 1.5rem 3rem; }
+
+      /* Stats drop out of absolute position and stack inline */
+      .hero-stats {
+        position: static;
+        margin-top: 3rem;
+        justify-content: flex-start;
+        gap: 2rem;
+      }
+
+      /* About becomes single column */
+      #about { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 1.5rem; }
+
+      /* Products: 3 cols → 2 cols, header stacks vertically */
+      #products { padding: 5rem 1.5rem; }
+      .product-grid { grid-template-columns: 1fr 1fr; }
+      .products-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+
+      /* Why Us: side-by-side → single column */
+      #why { padding: 5rem 1.5rem; }
+      .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+
+      /* Trust: side-by-side → stacked */
+      #trust { flex-direction: column; gap: 3rem; padding: 5rem 1.5rem; }
+      .trust-badges { min-width: unset; width: 100%; }
+
+      #cta { padding: 5rem 1.5rem; }
+      footer { flex-direction: column; gap: 1.5rem; text-align: center; padding: 2rem 1.5rem; }
+    }
+
+    @media (max-width: 580px) {
+      /* Products: 2 cols → 1 col on phones */
+      .product-grid { grid-template-columns: 1fr; }
+
+      /* On small phones keep only the CTA nav button, hide text links */
+      .nav-links li:not(:last-child) { display: none; }
+
+      /* Reduce the "Get a Quote" nav button so it never clips or overflows */
+      .nav-cta {
+        padding: 0.45rem 0.9rem !important;
+        font-size: 0.78rem !important;
+        white-space: nowrap;
+      }
+
+      /* Hero h1: slightly tighter font on very small screens */
+      h1 { font-size: clamp(2.5rem, 12vw, 3.5rem); }
+
+      /* Hero paragraph: ensure text does not overflow tiny screens */
+      .hero-sub { font-size: 0.95rem; }
+
+      /* Stack hero buttons vertically and make them full-width on tiny screens */
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn-primary,
+      .hero-actions .btn-outline { width: 100%; justify-content: center; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════════════
+       NAVIGATION
+       id="navbar" is used by JavaScript below to add/remove
+       box-shadow on scroll.
+       ════════════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+
+    <!-- Logo: clicking it takes you back to the top of the page -->
+    <a href="#" style="text-decoration:none;">
+      <div class="logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">LN CORE SUPPLY</span>
+        <span class="logo-bracket">]</span>
+      </div>
+    </a>
+
+    <!-- Navigation links — href="#section-id" scrolls smoothly to that section -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <!-- nav-cta gets special blue button styling -->
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       HERO SECTION
+       Full-screen intro. Contains decorative backgrounds (grid,
+       glows), the main headline, subtitle, buttons, and key stats.
+       ════════════════════════════════════════════════════════════ -->
+  <section id="hero">
+
+    <!-- Decorative elements — aria-hidden hides them from screen readers -->
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow"    aria-hidden="true"></div>
+    <div class="hero-glow-2"  aria-hidden="true"></div>
+
+    <!-- Main text content -->
+    <div class="hero-content">
+
+      <!-- Small label above headline -->
+      <p class="hero-eyebrow">New Generation Supply Chain</p>
+
+      <!-- Main headline — .accent = blue, .stroke = outline-only text -->
+      <h1>
+        Built to<br/>
+        <span class="accent">Perform.</span><br/>
+        <span class="stroke">Built to Last.</span>
+      </h1>
+
+      <!-- Subtitle / value proposition -->
+      <p class="hero-sub">
+        LN Core Supply delivers premium commercial and industrial products backed by modern
+        logistics, transparent pricing, and a team that doesn't settle for average.
+      </p>
+
+      <!-- Two CTA buttons -->
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">
+          Browse Products
+          <!-- Inline SVG arrow icon -->
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="contact.html" class="btn-outline">Request a Quote</a>
+      </div>
+    </div>
+
+    <!-- Key stats positioned bottom-right -->
+    <div class="hero-stats" aria-label="Key statistics">
+      <div class="stat">
+        <div class="stat-num">500<span>+</span></div>
+        <div class="stat-label">Products</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">48<span>h</span></div>
+        <div class="stat-label">Avg. Fulfillment</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">99<span>%</span></div>
+        <div class="stat-label">Order Accuracy</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       TICKER / MARQUEE BAR
+       Scrolling trust signals between hero and about.
+       aria-hidden="true" because it's decorative / repetitive.
+       Content is duplicated so the loop appears seamless.
+       ════════════════════════════════════════════════════════════ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-inner">
+      <!-- First copy -->
+      <span class="ticker-item"><span class="ticker-dot"></span>Fast Fulfillment</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Bulk Pricing Available</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Commercial &amp; Retail</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Dedicated Account Managers</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Quality Guaranteed</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Free Shipping on Orders $150+</span>
+      <!-- Duplicate — required for seamless infinite loop -->
+      <span class="ticker-item"><span class="ticker-dot"></span>Fast Fulfillment</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Bulk Pricing Available</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Commercial &amp; Retail</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Dedicated Account Managers</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Quality Guaranteed</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Free Shipping on Orders $150+</span>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       ABOUT SECTION
+       Left: text + CTA button.  Right: 2x2 feature tile grid.
+       class="reveal" → starts hidden, fades in when scrolled to.
+       ════════════════════════════════════════════════════════════ -->
+  <section id="about">
+
+    <!-- Left column: text -->
+    <div class="about-text reveal">
+      <p class="section-label">Who We Are</p>
+      <h2>Modern Management.<br/>Proven Reliability.</h2>
+      <p>LN Core Supply was built from the ground up with a new standard in mind — agile operations, transparent communication, and products that hold up under real-world demands.</p>
+      <p>We combine the responsiveness of a modern company with the dependability of an established supplier. Whether you're a small business or a growing enterprise, we scale with you.</p>
+      <a href="contact.html" class="btn-primary" style="margin-top: 0.8rem; display: inline-flex;">
+        Work With Us
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Right column: 2x2 feature tiles -->
+    <div class="about-visual reveal">
+      <div class="pillars">
+
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <!-- Layers icon = "Premium Products" -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h4>Premium Products</h4>
+          <p>Curated catalog of commercial-grade supplies for every need.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <!-- Clock icon = "Fast Turnaround" -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h4>Fast Turnaround</h4>
+          <p>Most orders fulfilled and shipped within 48 hours.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <!-- People icon = "Expert Support" -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h4>Expert Support</h4>
+          <p>Real humans, real answers — no automated runaround.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon" aria-hidden="true">
+            <!-- Truck icon = "Reliable Delivery" -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="1" y="3" width="15" height="13"/>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h4>Reliable Delivery</h4>
+          <p>End-to-end tracking and on-time delivery, every time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       PRODUCTS SECTION
+       6 product category cards in a 3-column grid.
+       ✏️  Replace categories, descriptions, and links with your
+           actual product lines when ready.
+       ════════════════════════════════════════════════════════════ -->
+  <section id="products">
+
+    <!-- Header row: heading on left, "View Catalog" button on right -->
+    <div class="products-header reveal">
+      <div>
+        <p class="section-label">Our Catalog</p>
+        <h2>What We Supply</h2>
+      </div>
+      <a href="#cta" class="btn-outline">View Full Catalog</a>
+    </div>
+
+    <!-- 3-column product card grid -->
+    <div class="product-grid reveal">
+
+      <!-- ── Card 1 ── -->
+      <article class="product-card">
+        <span class="product-badge badge-new">New Arrival</span>
+        <div class="product-num" aria-hidden="true">01</div>
+        <h3>Bearings &amp; Power Transmission</h3>
+        <p>UCP Pillow Block, UCF 4-Bolt Flange, and UCFL 2-Bolt Flange bearings — chrome steel inserts, cast iron housing, pre-greased.</p>
+        <a href="Bearings.html" target="_blank" class="product-link">Shop Category →</a>
+      </article>
+    
+
+      <!-- ── Card 2 ── -->
+      <article class="product-card">
+        <span class="product-badge badge-best">Bestseller</span>
+        <div class="product-num" aria-hidden="true">02</div>
+        <h3>Data Center Infrastructure</h3>
+        <p>Compliant personal protective equipment and workplace safety solutions for every sector.</p>
+        <a href="#cta" class="product-link">Shop Category →</a>
+      </article>
+
+      <!-- ── Card 3 ── -->
+      <article class="product-card">
+        <span class="product-badge badge-new">New</span>
+        <div class="product-num" aria-hidden="true">03</div>
+        <h3>Office &amp; Facilities</h3>
+        <p>Everything your building needs — from janitorial supplies to ergonomic workspace gear.</p>
+        <a href="#cta" class="product-link">Shop Category →</a>
+      </article>
+
+      <!-- ── Card 4 ── -->
+      <article class="product-card">
+        <span class="product-badge badge-best">Popular</span>
+        <div class="product-num" aria-hidden="true">04</div>
+        <h3>Packaging &amp; Shipping</h3>
+        <p>High-performance packaging materials and shipping solutions for e-commerce and logistics.</p>
+        <a href="#cta" class="product-link">Shop Category →</a>
+      </article>
+
+      <!-- ── Card 5 ── -->
+      <article class="product-card">
+        <span class="product-badge badge-sale">On Sale</span>
+        <div class="product-num" aria-hidden="true">05</div>
+        <h3>Electrical &amp; Lighting</h3>
+        <p>Commercial-grade electrical components and energy-efficient lighting for any facility.</p>
+        <a href="#cta" class="product-link">Shop Category →</a>
+      </article>
+
+      <!-- ── Card 6 ── -->
+      <article class="product-card">
+        <span class="product-badge badge-new">New</span>
+        <div class="product-num" aria-hidden="true">06</div>
+        <h3>Bulk &amp; Custom Orders</h3>
+        <p>Volume pricing, custom configurations, and dedicated account management for large orders.</p>
+        <a href="#cta" class="product-link">Request Quote →</a>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       WHY US SECTION
+       Left: intro heading.  Right: numbered list of differentiators.
+       ════════════════════════════════════════════════════════════ -->
+  <section id="why">
+    <div class="why-bg" aria-hidden="true"></div>
+
+    <div class="why-grid">
+
+      <!-- Left: heading + intro paragraph -->
+      <div class="reveal">
+        <p class="section-label">Our Advantage</p>
+        <h2>Why LN Core?</h2>
+        <p style="color: var(--gray); font-size: 0.9rem; line-height: 1.8; margin-top: 1rem;">
+          We're not just another distributor. We're a new kind of supply partner —
+          built on accountability, speed, and relationships.
+        </p>
+      </div>
+
+      <!-- Right: numbered differentiator list -->
+      <ul class="why-list reveal">
+
+        <li class="why-item">
+          <span class="why-num" aria-hidden="true">01</span>
+          <div>
+            <h4>Competitive, Transparent Pricing</h4>
+            <p>No hidden fees, no surprise markups. What you see is what you pay — with bulk discounts that actually scale.</p>
+          </div>
+        </li>
+
+        <li class="why-item">
+          <span class="why-num" aria-hidden="true">02</span>
+          <div>
+            <h4>Modern Order Management</h4>
+            <p>Track every order in real-time. Our systems are built for speed and clarity — not legacy software from 2005.</p>
+          </div>
+        </li>
+
+        <li class="why-item">
+          <span class="why-num" aria-hidden="true">03</span>
+          <div>
+            <h4>Dedicated Account Support</h4>
+            <p>Get a real point of contact who knows your business. We build relationships, not just transactions.</p>
+          </div>
+        </li>
+
+        <li class="why-item">
+          <span class="why-num" aria-hidden="true">04</span>
+          <div>
+            <h4>Quality-Vetted Catalog</h4>
+            <p>Every product we carry has been evaluated for durability, compliance, and value. We don't stock junk.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       TRUST / SOCIAL PROOF SECTION
+       Left: customer testimonial quote.
+       Right: 4 trust badges (Quality, Shipping, Support, Returns).
+       ✏️  Replace the quote with a real customer testimonial
+           once you have one.
+       ════════════════════════════════════════════════════════════ -->
+  <section id="trust">
+
+    <div class="trust-quote reveal">
+      <p class="section-label">Built on Trust</p>
+      <blockquote>
+        "We needed a supplier that could move as fast as we do.
+         LN Core Supply was the only team that could keep up."
+      </blockquote>
+      <!-- ✏️  Replace with real name + company -->
+      <p class="quote-attr">
+        <strong>Operations Director</strong> — Regional Distribution Co.
+      </p>
+    </div>
+
+    <!-- 2x2 trust badge grid -->
+    <div class="trust-badges reveal">
+      <div class="trust-badge">
+        <span class="trust-badge-icon" aria-hidden="true">🛡️</span>
+        <h5>Quality Assured</h5>
+        <p>Every product vetted</p>
+      </div>
+      <div class="trust-badge">
+        <span class="trust-badge-icon" aria-hidden="true">🚚</span>
+        <h5>Fast Shipping</h5>
+        <p>48h average dispatch</p>
+      </div>
+      <div class="trust-badge">
+        <span class="trust-badge-icon" aria-hidden="true">💬</span>
+        <h5>Real Support</h5>
+        <p>No bots, just people</p>
+      </div>
+      <div class="trust-badge">
+        <span class="trust-badge-icon" aria-hidden="true">📦</span>
+        <h5>Easy Returns</h5>
+        <p>Hassle-free policy</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       CALL TO ACTION SECTION
+       The final push to convert visitors. Two buttons:
+       1. Email CTA → opens default email client
+       2. Phone CTA → calls on mobile devices
+       ✏️  Update email and phone before going live.
+       ════════════════════════════════════════════════════════════ -->
+  <section id="cta">
+    <div class="cta-bg" aria-hidden="true"></div>
+
+    <p class="section-label" style="position: relative;">Ready to Start?</p>
+    <h2>Let's Build Something<br/><span style="color: var(--marine);">Reliable.</span></h2>
+    <p>Tell us what you need and we'll get back to you within one business day with a custom quote and product recommendations.</p>
+
+    <div class="cta-actions">
+      <!-- ✏️  Replace with your real email address -->
+      <a href="contact.html" class="btn-primary">
+        Request a Quote
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <!-- ✏️  Replace with your real phone number -->
+      <a href="tel:+18005550100" class="btn-outline">Call Us</a>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       FOOTER
+       Three elements across: logo, nav links, copyright.
+       On mobile these stack vertically (see responsive styles).
+       ════════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">
+      <span style="color: var(--marine);">[</span>
+      LN CORE SUPPLY
+      <span style="color: var(--marine);">]</span>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <!-- ✏️  Link these to real pages once created -->
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms</a></li>
+    </ul>
+
+    <!-- ✏️  Update year as needed -->
+    <p class="footer-copy">© 2025 LN Core Supply. All rights reserved.</p>
+  </footer>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       JAVASCRIPT
+
+       Two behaviors are handled here:
+
+       1. SCROLL REVEAL
+          IntersectionObserver watches every element with class="reveal".
+          When an element enters the viewport (threshold: 12% visible),
+          we add class="visible" which triggers the CSS transition
+          (opacity 0→1, translateY 20px→0). We then stop watching
+          that element (unobserve) since it only needs to animate once.
+
+       2. NAV SHADOW ON SCROLL
+          When the user scrolls more than 40px down the page, we add
+          a box-shadow to the navbar so it appears to "lift" above
+          the page content. This is a common UX pattern.
+       ════════════════════════════════════════════════════════════ -->
+  <script>
+
+    // ── 1. Scroll Reveal ──────────────────────────────────────────
+    // Create an observer that fires whenever a watched element
+    // becomes 12% or more visible in the viewport.
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible'); // triggers CSS transition
+          revealObserver.unobserve(entry.target); // stop watching — animate once only
+        }
+      });
+    }, { threshold: 0.12 });
+
+    // Attach observer to every element with class="reveal"
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+
+    // ── 2. Navbar shadow on scroll ────────────────────────────────
+    // Listen for any scroll event on the window.
+    // If scrolled more than 40px, add a drop shadow to the nav.
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 40) {
+        navbar.style.boxShadow = '0 2px 24px rgba(0, 0, 0, 0.08)';
+      } else {
+        navbar.style.boxShadow = 'none';
+      }
+    });
+
+  </script>
+
+</body>
+</html>
