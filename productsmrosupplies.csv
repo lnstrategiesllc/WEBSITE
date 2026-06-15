@@ -1,0 +1,13 @@
+sku,name,description,spec1,spec2,spec3,spec4,price,badge,badge_type,icon
+LB-GR-14,Lithium Grease - 14oz Cartridge,"NLGI 2 lithium complex grease, 14oz cartridge. Multi-purpose protection for bearings and chassis points.",Type: Lithium,NLGI 2,Size: 14oz,Multi-Purpose,,In Stock,badge-stock,block
+LB-SYN-1,Synthetic Gear Oil - 1 Gal,"Full synthetic ISO 220 gear oil, 1 gallon. Extends gearbox life under high heat and heavy load.",Type: Synthetic,ISO 220,Size: 1 Gal,Gear Oil,,In Stock,badge-stock,block
+LB-PEN-12,Penetrating Spray - 11oz,"Industrial penetrating oil with straw applicator, 11oz aerosol. Frees rusted fasteners and lubes mechanisms.",Type: Penetrant,Size: 11oz,Aerosol,Anti-Corrosion,,In Stock,badge-stock,block
+LB-CHN-16,Chain Lube - 16oz,"Tacky synthetic chain lubricant, 16oz aerosol. Cling formula resists fling-off on roller chain drives.",Type: Synthetic,Size: 16oz,Tacky Cling,Chain & Cable,,In Stock,badge-stock,block
+FS-HB38,Hex Bolt Kit 3/8in - Grade 5,"Assorted Grade-5 zinc-plated hex bolts, 3/8in, 100-pc kit with nuts and washers.",Size: 3/8in,Grade 5,Zinc Plated,100-pc Kit,,In Stock,badge-stock,angular
+FS-SS14,Stainless Bolt Kit 1/4in - 18-8,"18-8 stainless steel hex bolts, 1/4in, 80-pc assortment. Corrosion-proof for washdown and outdoor use.",Size: 1/4in,18-8 Stainless,Corrosion Proof,80-pc Kit,,In Stock,badge-stock,angular
+FS-ANCH,Wedge Anchor Pack 1/2in,"Hot-dip galvanized wedge anchors, 1/2in x 3-3/4in, 25-pc. For fastening equipment to concrete.",Size: 1/2in,Galvanized,Concrete,25-pc Pack,,In Stock,badge-stock,angular
+FS-WSH,Flat Washer Assortment,"Zinc-plated flat and lock washer assortment, 350-pc. Sizes from 1/4in through 1/2in.",Sizes: 1/4-1/2in,Zinc Plated,Flat & Lock,350-pc,,In Stock,badge-stock,angular
+SF-GLV-L,Cut-Resistant Gloves - Large,"ANSI A4 cut-resistant gloves, nitrile palm coating, large. 12-pair case for shop-wide protection.",Cut: ANSI A4,Size: Large,Nitrile Palm,12-Pair Case,,In Stock,badge-stock,block
+SF-GOG,Safety Glasses - 12 Pack,"Clear anti-fog safety glasses, ANSI Z87.1, 12-pack. Wraparound lens for impact protection.",Std: Z87.1,Anti-Fog,Clear Lens,12-Pack,,In Stock,badge-stock,block
+CN-RAG-25,Shop Towels - 25lb Box,"Reclaimed cotton shop rags, 25lb box. Lint-low and absorbent for cleanup and maintenance.",Type: Cotton,Size: 25lb,Lint-Low,Reusable,,In Stock,badge-stock,block
+CN-TAPE-6,Electrical Tape - 10 Pack,"Professional vinyl electrical tape, 3/4in x 66ft, 10-roll pack. UL-listed and flame retardant.",Width: 3/4in,Length: 66ft,UL Listed,10-Roll Pack,,In Stock,badge-stock,block
