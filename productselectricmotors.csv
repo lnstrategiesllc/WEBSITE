@@ -1,0 +1,13 @@
+sku,name,description,spec1,spec2,spec3,spec4,price,badge,badge_type,icon
+AC-56-1,1 HP AC Motor - 56 Frame,"Single-phase 1 HP TEFC motor, 56 frame, 1750 RPM. Capacitor-start for fans, pumps, and light machinery.",Power: 1 HP,RPM: 1750,Frame: 56,TEFC,,In Stock,badge-stock,block
+AC-145T-2,2 HP AC Motor - 145T Frame,"Three-phase 2 HP TEFC motor, 145T frame, 1750 RPM. Continuous-duty rated for industrial drives.",Power: 2 HP,RPM: 1750,Frame: 145T,TEFC 3-Phase,,In Stock,badge-stock,block
+AC-182T-3,3 HP AC Motor - 182T Frame,"Three-phase 3 HP TEFC motor, 182T frame, 1750 RPM. Cast iron frame for heavy industrial loads.",Power: 3 HP,RPM: 1750,Frame: 182T,TEFC 3-Phase,,In Stock,badge-stock,block
+AC-184T-5,5 HP AC Motor - 184T Frame,"Three-phase 5 HP TEFC motor, 184T frame, 1750 RPM. High-efficiency design for compressors and pumps.",Power: 5 HP,RPM: 1750,Frame: 184T,Premium Efficiency,,In Stock,badge-stock,block
+GM-INL-1,1 HP Inline Gearmotor,"1 HP inline helical gearmotor, 30:1 ratio, 58 RPM output. Compact high-torque drive for conveyors.",Power: 1 HP,Ratio: 30:1,Output: 58 RPM,Inline Helical,,In Stock,badge-stock,coupling
+GM-RA-2,2 HP Right-Angle Gearmotor,"2 HP right-angle worm gearmotor, 40:1 ratio. Hollow-bore output for direct shaft mounting.",Power: 2 HP,Ratio: 40:1,Output: 44 RPM,Right Angle,,In Stock,badge-stock,coupling
+VFD-1HP,VFD 1 HP - 230V,"1 HP variable frequency drive, 230V single-to-three phase. Sensorless vector control with built-in keypad.",Power: 1 HP,Input: 230V 1ph,Output: 3ph,Vector Control,,In Stock,badge-stock,block
+VFD-3HP,VFD 3 HP - 230V,"3 HP variable frequency drive, 230V three-phase. Programmable ramp, PID, and Modbus communications.",Power: 3 HP,Input: 230V 3ph,Output: 3ph,Modbus RTU,,In Stock,badge-stock,block
+VFD-5HP,VFD 5 HP - 460V,"5 HP variable frequency drive, 460V three-phase. Heavy-duty rating for constant-torque industrial loads.",Power: 5 HP,Input: 460V 3ph,Output: 3ph,Constant Torque,,In Stock,badge-stock,block
+MC-CON-3,3-Pole Contactor 40A,"3-pole IEC contactor rated 40A, 24V coil. For motor switching and control panel builds.",Poles: 3,Rating: 40A,Coil: 24VDC,IEC Mount,,In Stock,badge-stock,angular
+MC-OL-25,Overload Relay 16-25A,"Adjustable thermal overload relay, 16-25A range. Snaps onto contactor for motor protection.",Range: 16-25A,Class 10,Manual/Auto Reset,Trip Indicator,,In Stock,badge-stock,angular
+MC-START-2,2 HP Motor Starter,"Combination motor starter, 2 HP at 230V. Contactor plus overload in a NEMA enclosure, ready to wire.",Power: 2 HP,Voltage: 230V,NEMA 1 Enclosure,Pre-Wired,,In Stock,badge-stock,block

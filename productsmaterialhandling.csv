@@ -1,0 +1,13 @@
+sku,name,description,spec1,spec2,spec3,spec4,price,badge,badge_type,icon
+CR-19-GR,1.9in Gravity Roller,"1.9in galvanized steel gravity roller, 18in between frames. Spring-loaded axle and precision bearings for free-spinning travel.",Dia: 1.9in,BF: 18in,Galvanized,Spring Axle,,In Stock,badge-stock,coupling
+CR-25-GR,2.5in Gravity Roller,"2.5in steel gravity roller, 24in between frames. Heavier wall for medium-duty package handling.",Dia: 2.5in,BF: 24in,Steel Tube,Hex Axle,,In Stock,badge-stock,coupling
+CR-35-PW,3.5in Powered Roller,3.5in powered conveyor roller with double-groove sprocket end. For chain-driven live roller lines.,Dia: 3.5in,BF: 36in,Sprocket Drive,Sealed Bearing,,In Stock,badge-stock,coupling
+ID-25-3R,2.5in Troughing Idler Set,35-degree three-roll troughing idler set on a welded frame. Supports bulk material belts up to 24in wide.,Dia: 2.5in,Trough: 35deg,Belt: 24in,3-Roll Set,,In Stock,badge-stock,coupling
+ID-35-3R,3.5in Troughing Idler Set,Heavy-duty 35-degree three-roll idler set for 36in belts. Sealed bearings for aggregate and mining duty.,Dia: 3.5in,Trough: 35deg,Belt: 36in,Heavy Frame,,In Stock,badge-stock,coupling
+ID-25-RT,2.5in Return Idler,"Flat single-roll return idler, 2.5in diameter. Supports the underside of the belt on the return run.",Dia: 2.5in,Type: Return,Belt: 24in,Rubber Disc,,In Stock,badge-stock,coupling
+PL-DR-08,8in Drive Pulley - Lagged,8in crowned drive pulley with diamond-groove rubber lagging. Improves traction and reduces belt slip.,Dia: 8in,Face: 26in,Rubber Lagged,Crowned,,In Stock,badge-stock,circle
+PL-TL-08,8in Tail Pulley,"8in bare-drum tail pulley, crowned face. Pairs with drive pulley to keep belts tracking on straight runs.",Dia: 8in,Face: 26in,Bare Drum,Crowned,,In Stock,badge-stock,circle
+PL-TU-06,6in Take-Up Pulley,6in take-up pulley with adjustable slide mounts. Maintains belt tension as belts stretch over time.,Dia: 6in,Face: 20in,Adjustable,Slide Mount,,In Stock,badge-stock,circle
+CC-BR-12,Bracket & Hardware Kit,Universal conveyor roller bracket and bolt kit. Fits 1.9in to 2.5in spring and hex axle rollers.,Fits: 1.9-2.5in,Zinc Plated,Bolt Kit Incl,Universal,,In Stock,badge-stock,block
+CC-GD-10,10ft Guide Rail Kit,10ft UHMW guide rail with adjustable stand-off brackets. Keeps packages aligned along the conveyor.,Length: 10ft,UHMW,Adjustable,Bracket Set,,In Stock,badge-stock,block
+CC-SK-40,Conveyor Drive Sprocket,#40 double-strand drive sprocket for powered roller conveyors. Hardened teeth for long chain life.,Pitch: 1/2in,Double Strand,Teeth: 14,Hardened,,In Stock,badge-stock,circle
